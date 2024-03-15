@@ -31,7 +31,7 @@ public class SecurityConfig {
                 .formLogin(form ->
                         form
                                 .loginPage("/showLoginPage")
-                                .loginProcessingUrl("authenticateUser")
+                                .loginProcessingUrl("/authenticateUser")
                                 .permitAll()
                 )
                 .logout(logout ->
